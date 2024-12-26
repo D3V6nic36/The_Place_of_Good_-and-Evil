@@ -1,0 +1,4 @@
+name=CFEngine
+desc=Configuration Engine
+category=cluster
+os_support=!windows
