@@ -1,0 +1,165 @@
+certificate=Zertifikat
+key=Schlüssel
+csr=CSR
+
+e_file=Beim Versuch, Informationen aus dieser Datei zu erhalten, ist ein Fehler aufgetreten
+e_notcert=Vielleicht ist diese Datei nicht PEM-kodiert oder kein gültiges Zertifikat oder Schlüssel
+e_genfailed=Generierung nicht erfolgreich
+
+cn=Common Name (z. B. Hostname)
+o=Organisationsname (z. B. Firma)
+ou=Name der Organisationseinheit (z. B. Abteilung)
+l=Ort (z. B. Stadt)
+st=Bundesland oder Provinz (vollständiger Name)
+c=Land (2-Buchstaben-Code)
+emailAddress=E-Mail-Adresse (z. B. webmaster@company.com)
+password=Passwort
+confirm_password=Passwort bestätigen
+keyize=Schlüsselgröße (in Bits)
+keytype=Schlüsseltyp
+issued_on=Ausgestellt am
+expires_on=Läuft ab am
+md5fingerprint=MD5-Fingerabdruck
+sha1Fingerabdruck=SHA-1-Fingerabdruck
+sha256Fingerabdruck=SHA-256-Fingerabdruck
+
+modulus=Modulus (von öffentlichem Schlüssel)
+publicExponent=Öffentlicher Exponent
+privateExponent=Privater Exponent
+prime1=Primzahl 1
+prime2=Primzahl 2
+exponent1=Exponent 1
+exponent2=Exponent 2
+coefficient=Koeffizient
+
+keyfile=Schlüsseldateiname
+keycertfile=Schlüssel/Zertifikats-Paar-Dateiname
+continue=Weiter
+
+certmgrlib_issuer=Aussteller
+certmgrlib_subject=Betreff
+certmgrlib_e_file_open=Kann Datei nicht öffen
+certmgrlib_e_exec=Kann Dateityp nicht bestimmen: konnte openssl nicht ausführen
+certmgrlib_e_cert=Kann Dateityp nicht bestimmen: ungültiges Zertifikat
+certmgrlib_e_cert2=Kann Dateityp nicht bestimmen: ungültiger Schlüssel
+
+index_title=Zertifikats-Manager
+index_header=Zertifikats-Manager Haupt-Index
+index_gencert=Selbst signiertes Zertifikat und Schlüssel generieren
+index_gencsr=Schlüssel und Certificate Signing Request (CSR) generieren
+index_signcsr=Certificate Signing Request (CSR) unterzeichnen
+index_import=Schlüssel oder signiertes Zertifikat importieren
+index_view=Installierte Zertifikate und Schlüssel verwalten/zeigen
+index_return=Modulindex
+index_manual=OpenSSL-Konfigurationsdatei bearbeiten
+
+index_index=Index
+
+gencert_title=Zertifikat & Schlüssel generieren
+gencert_header=Zertifikats-Manager: Self Signed Certificate und Schlüssel generieren
+gencert_generate=Schlüssel generieren
+gencert_password_notice=Hinweis: Wenn dieser Schlüssel als Server-SSL-Schlüssel verwendet werden, jedes hier eingegebene Passwort muss jedes Mal eingegeben werden, dass ein SSL-Dienst, der diese Schlüssel verwendet, gestartet wird. Wenn Sie nicht jedes Mal das Passwort eingeben möchten, lassen Sie es leer. Allerdings kann jeder mit Root-Zugriff auf diesem Gerät möglicherweise auf den Schlüssel zugrfeifen und beliebigen SSL-Datenverkehr, der diesen Schlüssel verwendet, entschlüsseln.
+gencert_certfile=Zertifikatsdateiname
+gencert_days=Zertifikat gültig für (Tage)
+gencert_overwrite=Die obigen Zertifikat(e) und/oder der/die Schlüssel werden ersetzt, wenn Sie den Vorgang fortsetzen. Sind Sie sicher, dass Sie den Vorgang fortsetzen möchten?
+gencert_moreinfo=Zum Herunterladen oder Anzeigen von mehr Informationen über ein Zertifikat oder Schlüssel, folgen Sie dem Link aus dem Dateinamen.
+gencert_error=Ihre Einreichung beinhaltet die folgende Fehlermeldung(en):
+gencert_pleasefix=Bitte korrigieren Sie alle Probleme und reichen Sie sie erneut ein.
+gencert_e_nocn=Kein Common Name (CN) vergeben
+gencert_e_badpw=Passwörter stimmen nicht überein
+gencert_e_nodays=Keine Zertifikats-Gültigkeits-Länge angegeben
+gencert_e_nofilename=Zumindest ein Zertifikat und ein Schlüssel müssen erzeugt werden
+gencert_e_genfailed=Fehler, Zertifikat und Schlüssel nicht generiert
+gencert_genworked=Zertifikat und Schlüssel generiert
+gencert_saved_key=Der Schlüssel wurde gespeichert als
+gencert_saved_cert=Das Zertifikat wurde gespeichert als
+gencert_saved_keycert=Die Zertifikat+Schlüssel-Datei wurde gespeichert als
+
+gencsr_title=CSR generieren
+gencsr_header=Zertifikats-Manager: Certificate Signing Request (CSR) generieren
+gencsr_csrfile=CSR-Dateiname
+gencsr_generate=CSR generieren
+gencsr_overwrite=Das obige CSR und/oder Schlüssel werden ersetzt, wenn Sie den Vorgang fortsetzen. Sind Sie sicher, dass Sie den Vorgang fortsetzen möchten?
+gencsr_moreinfo=Zum Herunterladen oder Anzeigen von mehr Informationen über ein CSR oder Schlüssel, folgen Sie dem Link aus dem Dateinamen.
+gencsr_error=Ihre Einsendung hat die folgende(n) Fehlermeldung(en):
+gencsr_e_genfailed=Fehler, CSR und Schlüssel nicht generiert
+gencsr_e_nofilename=Ein CSR und ein Schlüsseldateiname müssen angegeben werden
+gencsr_genworked=CSR und Schlüssel generiert
+gencsr_saved_csr=CSR wurde gespeichert als
+
+manage_encrypt=Privaten Schlüssel verschlüsseln
+manage_decrypt=Privaten Schlüssel entschlüsseln
+manage_changepw=Passwort des privaten Schlüssels ändern
+manage_delete=Zertifikat löschen
+
+view_title=Zertifikat/CSR/Schlüssel anzeigen
+view_view=Anzeigen
+view_update=Aktualisieren
+view_download=Herunterladen
+view_pkcs12=Als PKCS12, mit Passwort:
+view_delete=Löschen
+view_select=Bitte wählen Sie eine Datei zum Anzeigen
+view_choose=Auswählen
+view_deleted=Datei erfolgreich gelöscht
+view_e_not_deleted=Fehler: Problem beim Löschen der Datei
+view_e_nofile=Datei nicht gefunden oder ist keine normale Datei
+view_wildcard=Datei Wildcard
+view_cn=Common Name
+view_o=Organisationsname
+view_ou=Name der Organisationseinheit
+view_email=E-Mail-Adresse
+view_location=Ort
+view_serial=Seriennummer
+view_sig_algorithm=Signaturalgorithmus
+view_last_update=Letzte Aktualisierung
+view_next_update=Nächste Aktualisierung
+view_revoked_certs=Widerrufene Zertifikate
+view_revoke_date=Widerrufsdatum
+view_revoke_reason=Widerrufsgrund
+view_crl_number=CRL-Nummer
+
+import_title=Schlüssel oder signiertes Zertifikat importieren
+import_e_nodir=Kein Verzeichnis gewählt
+import_e_nofilename=Dateiname nicht erhalten für Datei
+import_e_nofile=Datei nicht erhalten
+import_e_fileexists=Datei existiert
+import_error=Ihr Upload verursachte die folgenden Fehler
+import_pleasefix=Bitte beheben Sie die Probleme und laden Sie Ihre Datei erneut hoch
+import_header=Wählen Sie ein Zertifikat oder Schlüssel zum Upload
+import_choose=Ein Verzeichnis auswählen
+import_reset=Zurücksetzen
+import_cert_file=Zertifikatsdatei zum Hochladen
+import_cert_destination=Zielverzeichnis für Zertifikat
+import_cert_filename=Zieldateiname für Zertifikat
+import_upload_cert=Zertifikat hochladen
+import_key_file=Schlüssel-Datei zum Hochladen
+import_key_destination=Zielverzeichnis für Schlüssel
+import_key_filename=Zieldateiname für Schlüssel
+import_upload_key=Schlüssel hochladen
+
+signcsr_header=Zertifikats-Manager : Certificate Signing Request signieren
+signcsr_desc=Auf dieser Seite können Sie ein signiertes CSR von jemand anderem mit einem eigenen privaten Schlüssel signieren.
+signcsr_title=Certificate Signing Request signieren
+signcsr_csrfile=CSR-Dateiname
+signcsr_signfile=Zertifikats-Dateinamen signieren
+signcsr_keyfile=CA private Schlüssel-Datei
+signcsr_keycertfile=CA-Zertifikatsdatei
+signcsr_ca_passphrase=CA-Passphrase
+signcsr_days=Anzahl der Tage der Zertifizierung für
+signcsr_generate=Zertifikat signieren
+signcsr_e_nocsrfile=Keinen CSR-Dateinamen eingegeben
+signcsr_e_nosignfile=Kein Signiertes-Zertifikats-Dateiname eingegeben
+signcsr_e_nokeyfile=Kein CA privater Schlüssel oder Zertifikatsdatei eingegeben
+signcsr_e_nopassword=Es wurde kein CA-Kennwort eingegeben
+signcsr_e_signfailed=Fehler, signiertes Zertifikat nicht generiert
+signcsr_worked=Signiertes Zertifikat generiert
+signcsr_saved_cert=Das Zertifikat wurde gespeichert als
+
+acl_pages=Erlaubte Seiten
+
+ecannot=Sie sind nicht berechtigt die Seite zu benutzen
+
+manual_title=Konfigurationsdatei bearbeiten
+manual_desc=OpenSSL Konfigurationsdatei $1 bearbeiten ..
+manual_err=Konfigurationsdatei konnte nicht gespeichert werden
+manual_edata=Nichts eingegeben!

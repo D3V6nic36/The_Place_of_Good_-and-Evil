@@ -1,0 +1,120 @@
+index_title=Jabber-Instant-Messaging-Server
+index_econfig=Die Jabber-Konfigurationsdatei $1 existiert nicht. Entweder Jabber ist nicht installiert, oder die <a href='$2'>Modulkonfiguration</a> ist fehlerhaft.
+index_edir=Das Jabber-Basisverzeichnis $1 existiert nicht. Entweder Jabber ist nicht installiert, oder die <a href='$2'>Modulkonfiguration</a> ist fehlerhaft.
+index_emodules=Die Perl-Module $1 und $2, welche von Webmin für den Umgang mit der Jabber-XML-Konfiguration erforderlich sind, sind nicht installiert. <a href='$3'>Hier klicken</a>, um sie direkt von CPAN zu installieren.
+index_emodule=Das Perl-Modul $1, welches von Webmin für den Umgang mit der Jabber-XML-Konfiguration erforderlich ist, ist nicht installiert. <a href='$2'>Hier klicken</a> um es direkt von CPAN zu installieren.
+index_expat=Bitte vergewissern, dass die Expat-C-Bibliothek und Header installiert sind, bevor die Perl-Module installiert werden. Die Installation wird scheitern, sofern diese nicht verfügbar gemacht wurden.
+index_eparse=Die $1 Perl-Modul konnte die Jabber-Konfigurationsdatei nicht analysieren: $2
+index_ejabberd=Das Jabber-Server-Programm $1 wurde nicht auf diesem System gefunden. Entweder Jabber ist nicht installiert, oder die <a href='$2'>Modulkonfiguration</a> ist fehlerhaft.
+index_eversion=Webmin unterstützt nur die Jabber-Version $2, aber der Befehl $3 berichtet über die Version: $1
+index_eversion2=Webmin unterstützt nur Jabber-Versionen unterhalb von $2, aber der Befehl $3 berichtet die folgende Version: $1
+index_start=Jabber-Server starten
+index_startmsg=Auf diese Schaltfläche klicken, um den Jabber-Server zu starten. Bis dieser gestartet wird, werden keine Instant-Messaging-Clients in der Lage sein, diesen zu benutzen.
+index_stop=Jabber-Server stoppen
+index_stopmsg=Auf diese Schaltfläche klicken, um den Jabber-Server zu stoppen. Es kann kein Instant-Messaging-Client verwendet werden, nachdem der Server gestoppt wurde.
+index_restart=Änderungen anwenden
+index_restartmsg=Auf diese Schaltfläche klicken, um die aktuelle Konfiguration anzuwenden.
+index_comments=Warnung - Die Jabber-Konfigurationsdatei $1 enthält Kommentare, die entfernt werden, wenn Änderungen an der Konfiguration mit diesem Modul vorgenommen werden.
+index_return=Jabber-Menü
+index_version=Jabber-Version $1
+
+general_title=Allgemeine Optionen
+general_header=Allgemeine Jabber-Server-Optionen
+general_host=Server-Hostname
+general_elog=Fehler-Log-Datei
+general_elogfmt=Fehler-Log-Format
+general_rlog=Zugriffsprotokolldatei
+general_rlogfmt=Zugriffsprotokolldatei-Format
+general_pidfile=Prozess-ID-Datei
+general_err=Allgemeine Optionen konnten nicht gespeichert werden
+general_ehost=Fehlender oder ungültiger Server-Hostname
+general_eelog=Fehlende oder ungültige Fehler-Log-Datei
+general_eelogfmt=Fehlendes Fehler-Log-Format
+general_erlog=Fehlende oder ungültige Traffic-Log-Datei
+general_erlogfmt=Fehlendes Traffic-Log-Format
+general_epidfile=Fehlende oder ungültige Prozess-ID-Datei
+
+messages_title=Nachrichten
+messages_header=Jabber-Server-Nachricht für Clients
+messages_wsubject=Betreff der Willkommensnachricht
+messages_wbody=Text der Willkommensnachricht
+messages_vcard=Server-vCard
+messages_rinstr=Registrierungsanweisungen
+messages_rnotify=Administrator bei Registrierung benachrichtigen?
+messages_rfields=Erforderliche Registrierungsfelder
+messages_vcard2jud=vCard zum Jabber-Benutzerverzeichnis senden?
+messages_err=Nachrichten konnten nicht gespeichert werden
+messages_evcard=Ungültiges vCard-XML-Format: $1
+messages_etag=Server-vCard-XML beginnt nicht mit &lt;vCard&gt;
+
+modules_title=Jabber-Module
+modules_desc=Die unten aufgelisteten Module werden verwendet, um Nachrichten vom Jabber-Session-Manager zu empfangen. Diese Liste sollte nur von erfahrenen Anwendern geändert werden.
+modules_header=Jabber-Server-Session-Manager-Module
+modules_mod=Modulname
+modules_so=Geteilte Bibliothek
+modules_err=Jabber-Modul konnte nicht gespeichert werden
+modules_emod='$1' ist kein gültiger Modulname
+modules_eso=Die geteilte Bibliothek '$1' existiert nicht
+
+karma_title=Karma-Traffic-Kontrolle
+karma_header=Traffic-Rate-Steuerungsoptionen
+karma_rate=Übermäßige Verbindungssteuerung
+karma_rate_def=Deaktiviert
+karma_rate_sel=Client für $2 Sekunden nach $1 Verbindungen blockieren
+karma_mode=Karma
+karma_none=Keine Limitierung
+karma_low=Niedrige Traffic-Limits
+karma_medium=Mittlere Traffic-Limits
+karma_high=Hohe Traffic-Limits
+karma_sel=Die Einstellungen unten verwenden ..
+karma_heartbeat=Periodenlänge in Sekunden (<tt>heartbeat</tt>)
+karma_init=Initialisierungsperiode (<tt>init</tt>)
+karma_max=Karma-Maximum (<tt>max</tt>)
+karma_inc=Karma-Erhöhung (<tt>inc</tt>)
+karma_dec=Karma-Dekrement (<tt>Dezember</ tt>)
+karma_penalty=Strafzeiten (<tt>Strafe</ tt>)
+karma_restore=Burst-Wiederherstellungszeiten (<tt>Wiederherstellung</ tt>)
+karma_err=Karma-Optionen konnten nicht gespeichert werden
+karma_eheartbeat=Fehlende oder ungültige Periodenlänge
+karma_einit=Fehlende oder ungültige Initialisierungsperiode
+karma_emax=Fehlendes oder ungültiges Karma-Maximum
+karma_einc=Fehlender oder ungültiger Karma-Zuwachs
+karma_edec=Fehlendes oder ungültiges Karma-Dekrement
+karma_epenalty=Fehlende oder ungültige Strafzeiten
+karma_erestore=Fehlende oder ungültige wiederhergestellte Perioden
+karma_epoints=Fehlende oder ungültige Verbindungsanzahl
+karma_etime=Fehlende oder ungültige Zeit, um zu blockieren für
+
+ips_title=IP-Zugriffskontrolle
+ips_header=Jabber-Server-IP-Zugriffskontrolle
+ips_allow=Erlaubte Client-IPs
+ips_all=Alle Adressen
+ips_deny=Verweigerte Client-IPs
+ips_none=Nichts
+ips_sel=Lauschende Adressen/Netzmasken ..
+ips_err=IP-Zugriffskontrolle konnte nicht gespeichert werden
+ips_eaddr='$1' ist keine gültige IP-Adresse oder IP-Adresse/Netzmaske
+
+file_title=Konfigurationsdatei bearbeiten
+file_desc=Dieses Formular zum Bearbeiten der Jabber-Konfigurationsdatei verwenden. Idealerweise sollte das XML-Konfiguration-Format verstanden werden.
+file_header=Jabber-Konfigurationsdatei bearbeiten
+file_err=Konfigurationsdatei konnte nicht gespeichert werden
+
+admin_title=Adminstrative Benutzer
+admin_header=Server-Administrator
+admin_read=Lese-Zugriff des Administrators
+admin_write=Schreib-Zugriff des Administrators
+admin_reply=Auto-Reply zu Administrator-Nachrichten?
+admin_rsubject=Auto-Reply-Betreff
+admin_rbody=Auto-Reply-Nachricht
+
+filter_title=Benutzerfilter
+filter_header=Benutzerfilter-Rechte
+filter_max=Maximale Filter-Regeln
+filter_conds=Erlaubte Filter-Bedingungen
+filter_acts=Erlaubte Filter-Aktionen
+
+restart_err=Änderungen konnten nicht angewendet werden
+stop_err=Jabber konnte nicht gestoppt werden
+stop_epid=Jabber-Prozess konnte nicht gefunden werden
+start_err=Jabber konnte nicht gestartet werden
