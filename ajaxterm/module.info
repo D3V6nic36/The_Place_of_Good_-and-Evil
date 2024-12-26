@@ -1,0 +1,3 @@
+desc=Text Login
+name=ajaxterm
+longdesc=Access the shell on your system without the need for a separate SSH client, using Ajaxterm

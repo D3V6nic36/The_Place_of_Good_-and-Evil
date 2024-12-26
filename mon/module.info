@@ -1,0 +1,7 @@
+name=mon
+desc=MON Service Monitor
+category=system
+depends=init
+os_support=*-linux
+longdesc=Setup MON, a powerful service monitor and alerting system.
+readonly=1
